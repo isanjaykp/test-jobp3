@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('check mvn version push') {
             steps {
-                sh 'mvn --version'
+                bat 'mvn --version'
             }
         }
         stage('Build') {
             steps {
-                sh 'mvn -B -DskipTests clean compile'
+                bat 'mvn -B -DskipTests clean compile'
             }
         }
     }
