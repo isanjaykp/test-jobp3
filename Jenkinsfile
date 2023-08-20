@@ -1,5 +1,5 @@
 pipeline {
-    agent agent1
+    agent win-agent1
     stages {
         stage('check mvn version push') {
             steps {
